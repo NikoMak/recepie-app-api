@@ -308,7 +308,7 @@ class PrivateRecipeApiTests(TestCase):
             
     def test_create_recipe_with_existing_ingredients(self):
         """Test creating a recipe with existing ingredient."""
-        ingredient = Tag.objects.create(user=self.user, name='Lemon')
+        ingredient = Ingredient.objects.create(user=self.user, name='Lemon')
         payload = {
             'title': 'Vietnamese Soup',
             'time_minutes': 25,

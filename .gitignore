@@ -16,3 +16,6 @@ venv/
 
 # IntelliJ
 .idea
+
+# Environment Variables
+.env
